@@ -14,15 +14,20 @@ O foco é sair da intuição e utilizar dados para responder:
 ## Performance do Modelo
 
 O modelo de Regressão Linear Multivariada foi validado com métricas de alta precisão:
-- R² Score: 0.9338 (O modelo explica ~93% das variações nas vendas).
+- R² Score: 0.9338 (O modelo explica 93% das variações nas vendas).
 - RMSE: 1.32 (Erro médio baixo em relação à escala de milhões das vendas).
 - Vendas Base (Intercepto): $2.64M (Volume de vendas orgânicas/força da marca).
+
+<img src="imagens/avaliacao-modelo.png" alt="Gráfico MMM" width="300">
+
 
 ## Insights e Decisões Baseadas em Dados (Data-Driven)
 
 A análise dos coeficientes revelou uma discrepância clara na eficiência dos canais:
 - TV e Rádio: Apresentaram altíssima correlação e previsibilidade. São os motores de crescimento do mix.
 - Jornal (Newspaper): Apresentou impacto marginal próximo de zero e alta dispersão de dados (baixa confiabilidade).
+
+<img src="imagens/impacto.png" alt="Gráfico MMM" width="500">
 
 ## Simulação de Cenário "What-If"
 
@@ -31,11 +36,13 @@ Realizei uma simulação onde a verba do canal Jornal foi totalmente zerada e re
 - Faturamento com Verba Realocada: $17.43M
 - Impacto Estimado: + $3.58M de aumento no faturamento (+25.81%) sem necessidade de aporte extra de capital.
 
+<img src="imagens/what-if.png" alt="Gráfico MMM" width="330">
+
 ## Stack Tecnológico
-Linguagem: Python
-Bibliotecas: Pandas, NumPy, Scikit-Learn
-Visualização: Seaborn, Matplotlib
-Conceitos Aplicados: Regressão Linear, Divisão Treino/Teste, Engenharia de Variáveis e Análise de ROI.
+- Linguagem: Python
+- Bibliotecas: Pandas, NumPy, Scikit-Learn
+- Visualização: Seaborn, Matplotlib
+- Conceitos Aplicados: Regressão Linear, Divisão Treino/Teste, Engenharia de Variáveis e Análise de ROI.
 
 ## Dados
 
