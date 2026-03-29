@@ -36,14 +36,15 @@ Realizei uma simulação onde a verba do canal Jornal foi totalmente zerada e re
 - Faturamento com Verba Realocada: $17.43M
 - Impacto Estimado: + $3.58M de aumento no faturamento (+25.81%) sem necessidade de aporte extra de capital.
 
-<img src="Imagens/what-if.png" alt="Gráfico MMM" width="330">
+<img src="imagens/what-if.png" alt="Gráfico MMM" width="330">
 
 ## Validação Estatística e Trabalhos Futuros
 
 Para aferir a confiabilidade da inferência dos coeficientes (Teste-t), os resíduos do modelo foram submetidos ao Teste de Shapiro-Wilk. 
 O teste retornou um p-valor inferior a 0.05, indicando que os erros não possuem distribuição perfeitamente Normal. 
 
-<img src="Imagens/teste%20shapiro.png" alt="Teste de Shapiro-Wilk" width="600">
+<img src="imagens/teste%20shapiro.png" alt="Teste de Shapiro-Wilk" width="600">
+
 
 Isso sugere que, embora o poder de previsão global do modelo seja muito alto (R² de 93%), a atribuição exata do mérito de cada mídia possui ressalvas matemáticas. Como a regressão linear simples assume retornos constantes, falha em capturar o limite de saturação do mercado (retornos decrescentes). 
 
