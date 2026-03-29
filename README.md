@@ -36,13 +36,24 @@ Realizei uma simulação onde a verba do canal Jornal foi totalmente zerada e re
 - Faturamento com Verba Realocada: $17.43M
 - Impacto Estimado: + $3.58M de aumento no faturamento (+25.81%) sem necessidade de aporte extra de capital.
 
-<img src="imagens/what-if.png" alt="Gráfico MMM" width="330">
+<img src="Imagens/what-if.png" alt="Gráfico MMM" width="330">
+
+## Validação Estatística e Trabalhos Futuros
+
+Para aferir a confiabilidade da inferência dos coeficientes (Teste-t), os resíduos do modelo foram submetidos ao Teste de Shapiro-Wilk. 
+O teste retornou um p-valor inferior a 0.05, indicando que os erros não possuem distribuição perfeitamente Normal. 
+
+<img src="Imagens/teste%20shapiro.png" alt="Teste de Shapiro-Wilk" width="600">
+
+Isso sugere que, embora o poder de previsão global do modelo seja muito alto (R² de 93%), a atribuição exata do mérito de cada mídia possui ressalvas matemáticas. Como a regressão linear simples assume retornos constantes, falha em capturar o limite de saturação do mercado (retornos decrescentes). 
+
+Como próximos passos para uma segunda versão do modelo (V2), planeja-se a aplicação de Transformações Logarítmicas nas variáveis financeiras para corrigir a normalidade dos resíduos e simular o teto de saturação, além de explorar técnicas avançadas como Regressões Robustas (Ridge/Lasso) ou Inferência Bayesiana.
 
 ## Stack Tecnológico
 - Linguagem: Python
-- Bibliotecas: Pandas, NumPy, Scikit-Learn
+- Bibliotecas: Pandas, NumPy, Scikit-Learn, SciPy
 - Visualização: Seaborn, Matplotlib
-- Conceitos Aplicados: Regressão Linear, Divisão Treino/Teste, Engenharia de Variáveis e Análise de ROI.
+- Conceitos Aplicados: Regressão Linear, Divisão Treino/Teste, Teste de Hipótese (Shapiro-Wilk), Engenharia de Variáveis e Análise de ROI.
 
 ## Dados
 
