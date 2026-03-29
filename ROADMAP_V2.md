@@ -1,10 +1,10 @@
-# 📈 Estratégia e Roadmap para a Versão 2 (MMM V2)
+# Estratégia e Roadmap para a Versão 2 (MMM V2)
 
-Este documento servirá como um guia estratégico para a criação da **Versão 2** do nosso Marketing Mix Modeling (MMM). O objetivo central desta nova iteração é solucionar os gargalos estatísticos descobertos na V1 e implementar as melhores práticas recomendadas pela indústria (como adotado pelo Google e Meta).
+Este documento servirá como um guia estratégico para a criação da **Versão 2** do nosso Marketing Mix Modeling (MMM). O objetivo central desta nova iteração é solucionar os gargalos estatísticos descobertos na V1 e implementar as melhores práticas recomendadas pela indústria.
 
 ---
 
-## 🛑 Limitações Encontradas na V1 (O Que Precisamos Corrigir)
+## Limitações Encontradas na V1 (O Que Precisamos Corrigir)
 
 1. **Retornos Constantes (Infinitos):** A Regressão Linear Simples assumiu que cada $1 investido sempre geraria o mesmo retorno. Na vida real, existe o limite de Saturação de Mercado (Retornos Decrescentes).
 2. **Resíduos Não-Normais:** O Teste de Shapiro-Wilk comprovou que os erros do modelo não seguem uma curva normal perfeita. Isso distorce os p-valores e o Teste-t, tirando o rigor absoluto da atribuição de cada canal.
@@ -12,7 +12,7 @@ Este documento servirá como um guia estratégico para a criação da **Versão 
 
 ---
 
-## 🚀 Plano de Ação: O Que Implementar na V2
+## Plano de Ação: O Que Implementar na V2
 
 Abaixo estão os 5 pilares fundamentais para transformar este projeto e elevá-lo a um nível altamente profissional:
 
@@ -40,7 +40,7 @@ Substituir o `sklearn.linear_model.LinearRegression` por algoritmos que lidam na
 
 ---
 
-## 🛠️ Stack Tecnológica Atualizada (Estimada para V2)
+## Stack Tecnológica Atualizada (Estimada para V2)
 - Engenharia e Exploração: `Pandas`, `NumPy`
 - Visualização de Dados e Curvas: `Seaborn`, `Matplotlib`
 - Machine Learning Clássico: `Scikit-Learn` (Ridge/Lasso)
